@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201015/pngtree-white-polygonal-mosaic-triangular-background-abstract-light-gray-background-low-poly-image_418752.jpg);
+  font-family: "Nunito", sans-serif;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: rgb(17, 0, 255);
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+button:hover {
+  opacity: 0.8;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+  position: relative;
+}
+.form-container {
+  background-color: #f1eaf8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 80%;
+  min-height: fit-content;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0px 8px 4px 0 rgba(0, 0, 0, 0.25);
+  opacity: 0.8;
+  overflow-y: scroll;
+}
+.form-container::-webkit-scrollbar {
+  display: none;
+}
+.form-container-header {
+  font-weight: 550;
+  padding: 5px 10px;
+  color: #7300ff;
+  margin: 20px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+}
+.form-container-header span {
+  display: block;
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+  padding: 20px 0 0 0;
+}
+.form-content {
+  padding: 10px 20px;
+  margin: 20px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+.form-content label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  position: relative;
+}
+.form-content label svg {
+  fill: rgb(255, 0, 0);
+  height: 7px;
+  position: absolute;
+  top: 5%;
+}
+.form-content input[type="text"],
+.form-content input[type="email"] {
+  display: block;
+  margin: 20px 0;
+  height: 30px;
+  width: 100%;
+  border: 0px;
+  border-bottom: 1px solid;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.form-content input[type="text"]:focus,
+.form-content input[type="email"]:focus {
+  border: 0px;
+  outline: none;
+  border-bottom: 2px solid darkblue;
+}
+.form-content input[type="text"]::placeholder,
+.form-content input[type="email"]::placeholder {
+  font-size: 1.2rem;
+  transition: 0.3s ease-out;
+}
+.form-content input[type="text"]:focus::placeholder,
+.form-content input[type="email"]:focus::placeholder {
+  font-size: 0;
+  transition: 0.3s ease-in;
+}
+
+.form-content select{
+    margin: 20px 0;
+    width: 40%;
+    height: 30px;
+}
+
+.form-buttons{
+    margin: 20px 0;
+}
+
+.next {
+  float: right;
+  position: relative;
+  right: 10px;
+}
+.previous {
+  position: relative;
+  left: 10px;
+}
+.warning{
+    color: red;
+}
